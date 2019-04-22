@@ -26,7 +26,7 @@ public class NeuralNetwork {
         for(int i = 0; i < layout.length - 1; i++) {
             weights[i] = new Matrix(layout[i + 1], layout[i]);
             biases[i] = new Matrix(layout[i + 1], 1);
-            weights[i].randomize(-0.00000001, 0.00000001);
+            weights[i].randomize(0, (Math.sqrt(2/(layout[i] + layout[i + 1]))));
             biases[i].randomize(0, 1);
         }
     }
