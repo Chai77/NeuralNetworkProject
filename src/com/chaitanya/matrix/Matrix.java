@@ -1,5 +1,7 @@
 package com.chaitanya.matrix;
 
+import java.util.Random;
+
 import com.chaitanya.neuralnetwork.activations.Activations;
 
 public class Matrix {
@@ -47,10 +49,11 @@ public class Matrix {
         }
     }
 
-    public void randomize(double lower, double upper) {
+    public void randomize(double mean, double standardDeviation) {
+        Random random = new Random();
         for (int i = 0; i < matrix.length; i++) {
             for (int k = 0; k < matrix[i].length; k++) {
-                matrix[i][k] = Math.random() * (upper - lower) + lower;
+                matrix[i][k] = random.nextGaussian()*standardDeviation + mean;
             }
         }
     }
