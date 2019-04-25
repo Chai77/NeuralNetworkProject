@@ -37,6 +37,7 @@ public class TestingData {
                 }
                 inputs.add(new Matrix(input));
             }
+            scanner.close();
         } catch(IOException e) {
             e.printStackTrace();
         }

@@ -52,6 +52,7 @@ public class TrainingData {
                 }
                 inputs.add(new Matrix(inputArr));
             }
+            scanner.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
