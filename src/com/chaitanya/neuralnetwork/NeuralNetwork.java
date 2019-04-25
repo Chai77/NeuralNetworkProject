@@ -238,6 +238,7 @@ public class NeuralNetwork {
                 weights[i] = new Matrix(weight);
                 biases[i] = new Matrix(bias);
             }
+            scanner.close();
         } catch(IOException e) {
             e.printStackTrace();
         }
