@@ -11,12 +11,12 @@ public class XORProblem {
         int[] layout = new int[]{2, 3, 4, 1};
         NeuralNetwork network = new NeuralNetwork(layout);
         //NeuralNetwork network = new NeuralNetwork("XORProblem.txt");
-        Matrix layer1W = new Matrix(new double[][]{{0.1, 0.3},{0.2, 0.5},{0.6, 0.9}});
-        Matrix layer2W = new Matrix(new double[][]{{0.3, 0.7, 0.8}});
-        Matrix layer1B = new Matrix(new double[][]{{0.3}, {0.5}, {0.1}});
-        Matrix layer2B = new Matrix(new double[][]{{0.4}});
-        Matrix[] biases = new Matrix[]{layer1B, layer2B};
-        Matrix[] weights = new Matrix[]{layer1W, layer2W};
+        //Matrix layer1W = new Matrix(new double[][]{{0.1, 0.3},{0.2, 0.5},{0.6, 0.9}});
+        //Matrix layer2W = new Matrix(new double[][]{{0.3, 0.7, 0.8}});
+        //Matrix layer1B = new Matrix(new double[][]{{0.3}, {0.5}, {0.1}});
+        //Matrix layer2B = new Matrix(new double[][]{{0.4}});
+        //Matrix[] biases = new Matrix[]{layer1B, layer2B};
+        //Matrix[] weights = new Matrix[]{layer1W, layer2W};
         //network.setWeights(weights);
         //network.setBiases(biases);
         network.printWeights();
