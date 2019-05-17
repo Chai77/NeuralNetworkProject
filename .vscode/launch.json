@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - XORProblem",
+            "request": "launch",
+            "mainClass": "com.chaitanya.example.XORProblem",
+            "projectName": "NN"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ColorPredictor",
+            "request": "launch",
+            "mainClass": "com.chaitanya.example.ColorPredictor",
+            "projectName": "NN"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - HandwrittenDigitsNN",
             "request": "launch",
             "mainClass": "com.chaitanya.example.HandwrittenDigitsNN",
